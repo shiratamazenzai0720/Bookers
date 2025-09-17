@@ -1,7 +1,17 @@
-<h1>Title</h1>
-<p><%= @book.title %></p>
+<div class ="title">
+    <strong>Title:</strong>
+    <%= @book.title %>
+</div>
 
-<h2>Body</h2>
-<p><%= @book.body %></p>
-<%= link_to "Edit", edit_book_path(@book.id) %>
-<%= link_to "Back", {controller: "books", action: "back_to_index"}, class: "btn btn-primary" %>>
+<div class ="body">
+    <strong>Body:</strong>
+    <%= @book.body %>
+</div>
+
+<a class ="edit">
+    <%= link_to "Edit", edit_book_path(@book.id) %>
+</a>
+|
+<a class="back">
+<%= link_to "Back", {controller: "books", action: "back_to_index"}, class: "btn btn-primary" %>
+</a>

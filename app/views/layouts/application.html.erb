@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Bookers</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -17,22 +16,4 @@
     <% end %>
     <%= yield %>
   </main>
-
-  <body>
-  <header>
-      <h1 class="headline"> ようこそ
-      <strong>Bookers</strong>
-      へ！ </h1>
-    </header>
-    <nav>
-      <ul class="nav-book">
-        <li class="nav-book-item">
-          <%= link_to "start", books_path %>
-        </li>
-      </ul>
-    </nav>
-    <main>
-      <%= yield %>
-    </main>
-  </body>
 </html>
