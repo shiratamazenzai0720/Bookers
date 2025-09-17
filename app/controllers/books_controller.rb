@@ -35,7 +35,11 @@ class BooksController < ApplicationController
   def destroy
     book = Book.find(params[:id])
     book.destroy
-    redirect_to '/books'  # 投稿一覧画面へリダイレクト  
+    redirect_to '/books'  
+  end
+
+  def back_to_index
+    redirect_to '/books'
   end
 
   private
