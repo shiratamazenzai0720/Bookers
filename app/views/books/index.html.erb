@@ -20,7 +20,7 @@
     </tbody>
   </table>
 
-<h1>New book</h1>
+<h2>New book</h2>
 <% if @book.errors.any? %>
   <%= @book.errors.count %>件のエラーが発生しました
   <ul>
@@ -32,11 +32,13 @@
   
 <%= form_with model: @book, url: '/books', method: :post do |f| %>
 
-<h4>Title</h4>
-<%= f.text_field :title %>
-	
-<h4>Body</h4>
-<%= f.text_area :body %>
-	
-<%= f.submit 'Create Book' %>
+<div class="newbook">
+  <div class="index">Title</div>
+  <%= f.text_field :title %>
+</div>
+<div class="newbook">
+  <div class="index">Body</div>
+  <%= f.text_area :body %>
+</div>
+  <%= f.submit 'Create Book' %>
 <% end %>

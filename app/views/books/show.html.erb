@@ -1,9 +1,9 @@
-<div class ="title">
+<div class ="notice">
     <strong>Title:</strong>
     <%= @book.title %>
 </div>
 
-<div class ="body">
+<div class ="notice">
     <strong>Body:</strong>
     <%= @book.body %>
 </div>
@@ -11,7 +11,7 @@
 <a class ="edit">
     <%= link_to "Edit", edit_book_path(@book.id) %>
 </a>
-|
+ | 
 <a class="back">
-<%= link_to "Back", {controller: "books", action: "back_to_index"}, class: "btn btn-primary" %>
+<%= link_to "Back ", {controller: "books", action: "back_to_index"}, class: "btn btn-primary" %>
 </a>

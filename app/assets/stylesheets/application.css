@@ -1,20 +1,6 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background-color: #fff;
-  color: #333;
-  font-size: 13px;
-  line-height: 18px;
-  margin: 33px;
-}
-
-h1 {
-  margin-top: 17.42px;
-  margin-bottom: 17.42px;
+header {
+  width: 90%;
+  padding: 15px 0;
 }
 
 .contents {
@@ -23,67 +9,42 @@ h1 {
   margin: 33px;
 }
 
-.nav-book-item {
-  list-style: none;
-  display: inline-block;
-  margin: 0 20px;
-}
-
 main {
-  width: 880px;
-  margin: 0 auto;
+  background-color: #fff;
+  color: #333;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 33px;
 }
 
-.book-wrap {
-  display: flex;
-  flex-wrap: wrap;
+th {
+  padding-bottom: 5px;
 }
 
-.book-box {
-  width: 200px;
-  height: 250px;
-  margin: 10px;
-  position: relative;
+td {
+  padding-bottom: 7px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
-.book-comment {
-  width: 200px;
-  position: absolute;
-  left: 0;
-  bottom: 0;
+.newbook {
+  margin-bottom: 10px;
 }
 
-.book-body {
-  display: block;
-  color: gray;
-  font-size: 12px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
+.index {
+  margin-bottom: 0;
 }
 
-.book-title {
-  display: block;
-  font-size: 18px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
+.notice {
+  margin: 33px;
 }
-
-.flash-message {
-    border-radius: 5px;
-    padding: 16px 24px;
-    margin: 16px 0px;
-  }
    
-  .flash-message.notice {
-    background-color: #bcdfff;
-    color: #0067C0;
-    border: solid 1px #0067C0;
-  }
+.flash-message.notice {
+  color: green;
+}
    
-  .flash-message.alert {
-    background-color: #ffd4d1;
-    color: #930403;
-    border: solid 1px #930403;
-  }
+.flash-message.alert {
+  background-color: #ffd4d1;
+  color: #930403;
+  border: solid 1px #930403;
+}

@@ -3,10 +3,10 @@ class BooksController < ApplicationController
   def create
     @book = Book.new(book_params)
     if @book.save
-      flash[:notice] = "投稿に成功しました。"
+      flash[:notice] = "Book was successfully created."
       redirect_to book_path(@book.id)
     else
-      flash.now[:alert] = "投稿に失敗しました。"
+      flash.now[:alert] = "Book was failure created."
       render :new
     end
   end
@@ -32,8 +32,14 @@ class BooksController < ApplicationController
 
   def destroy
     book = Book.find(params[:id])
+    if book.save
+      flash[:notice] = "Book was successfully destroyed."
     book.destroy
-    redirect_to '/books'  
+    redirect_to '/books'
+    else
+      flash.now[:alert] = "Book was failure destroyed."
+      render :new
+    end
   end
 
   def back_to_index
